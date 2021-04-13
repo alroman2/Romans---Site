@@ -125,8 +125,10 @@ nav a:hover {
   transition: 0.5s;
 }
 
+
 .grid-img:hover{
   transform: scale(1.5);
+  filter: drop-shadow(0 0 0.75rem black);
 }
 #add-comment-form {
   border-bottom: 2px solid black;
