@@ -17,13 +17,14 @@ h3, h4 {
   margin-bottom: 0;
 }
 
+/* NavBar Stylings */
 nav {
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid rgb(47,20,18);
   text-align: center;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
-  background: white;
+  background: none;
 }
 
 nav ul {
@@ -46,14 +47,61 @@ nav a {
 }
 
 nav a:hover {
-  background: black;
+  background:#BBCACC ;
   color: white;
 }
 
+/** HomePage Stylings **/
+#img-banner{
+  background-image: url('https://images.unsplash.com/photo-1502246170363-97cb63f36c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+  background-position: center;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  height: 20em;
+  max-width: 100%;
+}
+.title {
+  text-align: center;
+  color: white;
+  font-size: 15vw;
+  margin-top: 0%; 
+  padding-top: 12vw;
+}
+
+.title-box{
+  font-size: small;
+  margin-top: 10%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.subtitle {
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+  padding-bottom: 100%;
+  padding-left: 4vw;
+
+}
+
+.content-body{
+  max-width: auto;
+  text-align: justify;
+}
+
+.content-body-margin{
+  margin-top: 5%;
+}
+
+
 #page-body {
-  max-width: 700px;
-  margin: auto;
-  padding-top: 64px;
+  
+  
 }
 
 .article-list-item {
@@ -67,6 +115,19 @@ nav a:hover {
   border-bottom: 2px solid black;
 }
 
+.grid{
+  margin: 1%;
+}
+
+.grid-img{
+  max-width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.grid-img:hover{
+  transform: scale(1.5);
+}
 #add-comment-form {
   border-bottom: 2px solid black;
   padding: 16px;
@@ -99,4 +160,102 @@ nav a:hover {
 .comment {
   border-bottom: 2px solid black;
   padding: 16px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+#img-banner{
+  background-image: url('https://images.unsplash.com/photo-1502246170363-97cb63f36c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat, repeat;
+  max-width: 100%;
+  opacity: 0.80;
+  height: 40vw;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+  margin-top: 0%;
+  padding-top: 5vw;
+}
+
+.title-box{
+  font-size: small;
+  margin-top: 4%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  opacity: 0.8;
+}
+
+.subtitle {
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  padding-bottom: 50%;
+  padding-left: 10%;
+
+}
+
+.grid{
+  margin: 1%;
+  margin-bottom: 2%;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
 }

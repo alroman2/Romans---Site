@@ -6,6 +6,7 @@ import ArticlesListPage from "./pages/ArticlesListPage";
 import ArticlePage from "./pages/ArticlePage";
 import NavBar from "./NavBar";
 import NotFoundPage from "./pages/NotFoundPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 function App() {
