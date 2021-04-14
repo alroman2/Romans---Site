@@ -19,12 +19,14 @@ h3, h4 {
 
 /* NavBar Stylings */
 nav {
-  border-bottom: 2px solid rgb(47,20,18);
+  border-bottom: none;
   text-align: center;
   position: relative;
   top: 0;
   width: 100%;
-  background: none;
+  background-color: white ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav ul {
@@ -53,7 +55,7 @@ nav a:hover {
 
 /** HomePage Stylings **/
 #img-banner{
-  background-image: url('https://images.unsplash.com/photo-1502246170363-97cb63f36c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('./images/home_page_banner.jpg');
   background-position: center;
   
   background-size: cover;
@@ -116,7 +118,7 @@ nav a:hover {
 }
 
 .grid{
-  margin: 1%;
+  margin: 2%;
 }
 
 .grid-img{
@@ -126,9 +128,33 @@ nav a:hover {
 }
 
 
-.grid-img:hover{
+.grid-img-md{
+  max-width: 50%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.grid-img-sm{
+  max-width: 30%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.carousel-content-grid{
+  justify-content: center;
+  padding-bottom: 150px;
+}
+
+.grid-img:hover, .grid-img-sm:hover, .grid-img-md:hover{
   transform: scale(1.5);
   filter: drop-shadow(0 0 0.75rem black);
+}
+.img{
+
+}
+.image-scale-down{
+  max-width: 100%;
+  height: auto;
 }
 #add-comment-form {
   border-bottom: 2px solid black;
@@ -211,13 +237,13 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
 /* Styles */
 #img-banner{
-  background-image: url('https://images.unsplash.com/photo-1502246170363-97cb63f36c81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80');
+  background-image: url('./images/home_page_banner.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat, repeat;
   max-width: 100%;
-  opacity: 0.80;
+  opacity: 0.8  0;
   height: 40vw;
 }
 
