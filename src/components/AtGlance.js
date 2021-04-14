@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import RB from '../images/reactBootstrap.png';
 import Container from 'react-bootstrap/Container';
+import SkillsGif from '../images/skills.gif';
 
 const AtGlance = function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -19,13 +20,13 @@ const AtGlance = function ControlledCarousel() {
       <Carousel.Item interval={intervalTime}>
         <img
           className=" w-100 image-scale-down"
-          src= {bg} 
+          src= {SkillsGif} 
           alt="First slide"
         />
         <Carousel.Caption className="carousel-content-grid container">
             <div className = "Row">
                 <div className = "col-8">
-                    <img src = {RB} className="grid grid-img-sm"></img>
+                    
                 </div>
                 <div >
                 </div>

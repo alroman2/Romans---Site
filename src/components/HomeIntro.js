@@ -11,7 +11,7 @@ const HomeIntro = () => (
     <>
        <div className = "content-body">
       <div className="title-box">
-        <h1> Hey, I'm Glad You're Here. Lets Connect</h1>
+        <h1> Hey, I'm Glad You're Here. <br></br> Lets Connect.</h1>
       </div>
       <Container className = "content-body-margin">
         <Row>
