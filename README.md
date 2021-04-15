@@ -6,7 +6,16 @@ Welcome to my personal blog where I post about my ongoing projects, my journey, 
 
 * Front-End
      * React.js
-     * 
+     * Bootstrap
+     * CSS/HTML
+
+* Back-End
+    * Node.js
+    * Express.js
+    * MongoDB
+    * AWS EC2
+    * Route 53 
+   
 ## License
 
     Copyright [2020] [Alexander Roman]
