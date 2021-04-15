@@ -5,15 +5,8 @@ Welcome to my personal blog where I post about my ongoing projects, my journey, 
 ##Stack
 
 * Front-End
-      * React.js
-      * Bootstrap
-      * HTML/CSS
-*Back-End
-      * Node.js
-      * Express.js
-      * AWS EC2
-      * AWS Route 53
-   
+     * React.js
+     * 
 ## License
 
     Copyright [2020] [Alexander Roman]
