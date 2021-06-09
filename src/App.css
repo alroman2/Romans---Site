@@ -3,6 +3,13 @@ body {
   font-size: 18px;
 }
 
+#Logo {
+  display: inline;
+  float: left;
+  padding-left: 2%;
+  position: relative;
+}
+
 button {
   padding: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,12 +40,15 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-right: 10vw ;
 }
 
 nav li {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  
+  
 }
 
 nav a {
@@ -49,8 +59,30 @@ nav a {
 }
 
 nav a:hover {
-  background:#BBCACC ;
+  background: #6fa1b49f; ;
   color: white;
+}
+
+
+/**Footer Stylings **/
+.Footer{
+  border-top: 1px solid black;
+  margin-top: 10vh;
+  max-width: 100%;
+}
+
+.Footer-ul{
+  list-style-type: none;
+  margin-top: 0;
+  color: black;
+}
+
+.Footer-text{
+  color: black;
+}
+.Footer-text, .Footer-ul{
+  text-decoration: none;
+
 }
 
 /** HomePage Stylings **/
@@ -70,6 +102,18 @@ nav a:hover {
   font-size: 15vw;
   margin-top: 0%; 
   padding-top: 12vw;
+}
+
+.title-about{
+  color: black;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;  
+  letter-spacing: 0.225em;
+  margin-top: 5vh;
+  text-transform: uppercase;
+  margin-bottom: 15vh;
+ border-bottom: 1px solid black;
 }
 
 .title-box{
@@ -92,7 +136,7 @@ nav a:hover {
 }
 
 .content-body{
-  max-width: auto;
+  
   text-align: justify;
 }
 
@@ -100,6 +144,18 @@ nav a:hover {
   margin-top: 5%;
 }
 
+.mediaCard {
+  justify-content: center;
+  margin-top: 1.5%;
+}
+
+.socialMediaBtn{
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.5s;
+}
 
 #page-body {
   
@@ -145,9 +201,9 @@ nav a:hover {
   padding-bottom: 150px;
 }
 
-.grid-img:hover, .grid-img-sm:hover, .grid-img-md:hover{
+.grid-img:hover, .grid-img-sm:hover, .grid-img-md:hover, .socialMediaBtn:hover{
   transform: scale(1.5);
-  filter: drop-shadow(0 0 0.75rem black);
+  filter: drop-shadow(0 0 0.75rem,white);
 }
 .img{
 

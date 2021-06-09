@@ -7,12 +7,32 @@ import image2 from '../images/_Alex_profile_2.jpg';
 import image3 from '../images/_Alex_profile_1.jpg';
 import image4 from '../images/_Alex_headshot.jpeg';
 import AtGlance from './AtGlance';
+import linkedInBg from '../images/LI-In-Bug.png';
+import gitMarkBg from '../images/GitHub-Mark-64px.png'
+import emailBg from '../images/emailLogo.png';
+
 const HomeIntro = () => (
     <>
        <div className = "content-body">
       <div className="title-box">
-        <h1> Hey, I'm Glad You're Here. <br></br> Lets Connect.</h1>
+        <h1> Hey, I'm Glad You're Here. <br></br> Lets Connect!</h1>
       </div>
+            <Row className="mediaCard">
+              <Col lg={1}>
+                  <a target="_blank" href="https://www.linkedin.com/in/alroman27">
+                    <img src ={linkedInBg} className="socialMediaBtn" ></img>
+                  </a>
+              </Col>
+              <Col lg={1}>
+                  <a target="_blank" href="https://github.com/alroman2">
+                    <img src ={gitMarkBg} className="socialMediaBtn" ></img>
+                  </a>
+              </Col><Col lg={1}>
+                  <a target="_blank" href="mailto: aroman27@ucmerced.edu">
+                    <img src ={emailBg} className="socialMediaBtn" ></img>
+                  </a>
+              </Col>
+            </Row>
       <Container className = "content-body-margin">
         <Row>
           <Col lg={7} md={4} style={{alignItems: "center"}}>

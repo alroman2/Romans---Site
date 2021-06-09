@@ -4,6 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import RB from '../images/reactBootstrap.png';
 import Container from 'react-bootstrap/Container';
 import SkillsGif from '../images/skills.gif';
+import JourneyGif from '../images/My_Journey_Carousel.gif';
+import FeaturedProj from '../images/Featured_Projects.gif';
+
 
 const AtGlance = function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -23,46 +26,34 @@ const AtGlance = function ControlledCarousel() {
           src= {SkillsGif} 
           alt="First slide"
         />
-        <Carousel.Caption className="carousel-content-grid container">
-            <div className = "Row">
-                <div className = "col-8">
-                    
-                </div>
-                <div >
-                </div>
-                <div >
-                </div>
-            </div>
-
-        </Carousel.Caption>
         <Carousel.Caption>
           <h3>Top Skills</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p>Crafting Web and Mobile experiences - front to the back.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={intervalTime}>
         <img
           className=" w-100 image-scale-down"
-          src= {bg} 
+          src= {FeaturedProj} 
           alt="Second slide"
         />
 
         <Carousel.Caption interval={intervalTime}>
           <h3>Featured Projects</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>A lightweight Twitter App - Shopping Page - Movie Discovery App</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="w-100 image-scale-down"
-          src= {bg} 
+          src= {JourneyGif} 
           alt="Third slide"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption interval={intervalTime}>
           <h3>My Journey</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            From Mexico to the Bay to the heart of California
           </p>
         </Carousel.Caption>
       </Carousel.Item>

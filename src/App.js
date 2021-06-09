@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import ArticlesListPage from "./pages/ArticlesListPage";
 import ArticlePage from "./pages/ArticlePage";
 import NavBar from "./NavBar";
+import Footer from "./Footer"
 import NotFoundPage from "./pages/NotFoundPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/article/:name" component={ArticlePage} />
             <Route component={NotFoundPage} />
           </Switch>
+        <Footer/>
         </div>
       </div>
     </Router>

@@ -1,8 +1,16 @@
 import React from "react";
-
+import Profile from '../components/Profile';
 const AboutPage = () => (
   <>
-    <h1> About Me!</h1>
+    <div>
+      <div className="title-about">
+        <center> 
+          <h1 >Alex Roman</h1>
+        </center>
+      </div>
+      <Profile/>      
+
+    </div>
   </>
 );
 
