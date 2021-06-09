@@ -3,7 +3,7 @@ import React from "react";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import HomeIntro from '../components/HomeIntro';
-
+import ContactForm from '../components/ContactForm'
 
 const HomePage = () => (
   <>
@@ -13,7 +13,9 @@ const HomePage = () => (
         <p className = "subtitle"> First Gen Hispanic Immigrant. Aspiring Software Engineer.</p>
       </Jumbotron>
     </Container>
-    <HomeIntro></HomeIntro>    
+    <HomeIntro></HomeIntro> 
+    <ContactForm></ContactForm>
+
   </>
 );
 

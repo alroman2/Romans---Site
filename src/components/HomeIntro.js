@@ -28,7 +28,7 @@ const HomeIntro = () => (
                     <img src ={gitMarkBg} className="socialMediaBtn" ></img>
                   </a>
               </Col><Col lg={1}>
-                  <a target="_blank" href="mailto: aroman27@ucmerced.edu">
+                  <a target="_blank" href="#contactMe">
                     <img src ={emailBg} className="socialMediaBtn" ></img>
                   </a>
               </Col>
