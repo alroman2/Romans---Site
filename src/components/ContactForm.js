@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react';
+
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -9,8 +10,10 @@ const ContactForm = () => {
     const [email,setEmail] = React.useState("");
     const [message,setMessage] = React.useState("");
     const contactFormRef = useRef();
+
+    
     return (
-        <Container ref={contactFormRef}>
+        <Container id="contactForm">
             <div className="title-box">
                 <h1> Contact Me</h1>
             </div>
