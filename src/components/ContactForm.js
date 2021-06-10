@@ -7,11 +7,32 @@ import { Button } from 'bootstrap';
 
 
 const ContactForm = () => {
-    const [name,setName] = React.useState("");
-    const [email,setEmail] = React.useState("");
-    const [subject, setSubject] = React.useState("");
-    const [message,setMessage] = React.useState("");
+    const [senderName,setName] = React.useState("");
+    const [senderEmail,setsenderEmail] = React.useState("");
+    const [senderSubject, setsenderSubject] = React.useState("");
+    const [senderMessage,setsenderMessage] = React.useState("");
     const contactFormRef = useRef();
+
+    const sendEmail = async() => {
+        
+            const res = await fetch(`/api/contact`, {
+                method:  'post',
+                body: JSON.stringify({
+                    name: senderName,
+                    email: senderEmail,
+                    subject: senderSubject,
+                    message: senderMessage
+                }),
+                
+                headers: {
+                    'Content-Type' : 'application/json',
+                }
+            });
+
+            const code = await res.json();
+            
+            console.log(code);
+    }
 
     
     return (
@@ -35,7 +56,7 @@ const ContactForm = () => {
                     
                     </Col>
                     <Col sm={6} lg={8}>
-                        <input type='text' className="inputBox" onChange={event => setEmail(event.target.value)}></input>
+                        <input type='text' className="inputBox" onChange={event => setsenderEmail(event.target.value)}></input>
                     </Col>
                 </Row>
                 <Row>
@@ -44,7 +65,7 @@ const ContactForm = () => {
                     
                     </Col>
                     <Col sm={6} lg={8}>
-                        <input type='text' className="inputBox" onChange={event => setSubject(event.target.value)}></input>
+                        <input type='text' className="inputBox" onChange={event => setsenderSubject(event.target.value)}></input>
                     </Col>
                 </Row>
                 <Row>
@@ -52,25 +73,14 @@ const ContactForm = () => {
                         <p>Message: </p>
                     </Col>
                     <Col sm={6} lg={8}>
-                        <input type='text'className="inputBox inputBox-lg" onChange={event => setMessage(event.target.value)}></input>
+                        <input type='text'className="inputBox inputBox-lg" onChange={event => setsenderMessage(event.target.value)}></input>
                     
                     </Col>
                     
                 </Row>
                 <Row >
                     <Col sm={6} lg={10} style={{justifyContent: 'flex-end'}}> 
-                        
-                        //TODO: Write API request to server to send email
-                        //TODO: Add name and subject lines
-                        //TODO: Add a clear button, text auto clears after send
-                        {/* use the endpoint /api/contact 
-                        Req params{
-                            name: 'string',
-                            email: 'string',
-                            subject: 'string',
-                            message: 'string',
-                        } */}
-                        <button id="contactSubmitBtn">
+                        <button id="contactSubmitBtn" onClick={()=> sendEmail()}>
                             Send Message
                         </button>
                     
